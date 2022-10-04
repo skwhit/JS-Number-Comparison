@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="#">
+    <script  defer src="./js/main.js"></script>
+</head>
+<body>
+    <h1></h1>
+    <div class="modal">
+        <label for="fill-in"></label>
+        <input type="text" autofocus>
+        <button>Submit <br>(Press Enter)</button>
+    </div>
+    <style>
+        body {
+            background-color: grey;
+        }
+        h1 {
+            margin: 0; 
+            padding: 0; 
+            color: white; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh;
+            font-size: 3rem; 
+            text-align: center;
+        }
+        .modal {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            width: 40%;
+            max-width: 400px;
+            min-width: 300px;
+            height: 20%;
+            min-height: 200px;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: rgba(48, 103, 146, 0.7);
+            border-radius: 5px;
+        }
+        label, input, button {
+            margin: 10px 0;
+            font-size: 1rem;
+            text-align: center;
+        }
+        label {
+            font-size: 1.5rem;
+        }
+        button {
+            font-size: 1rem;
+            padding: 5px;
+            font-weight: 600;
+            background-color: white;
+            border-radius: 5px;
+        }
+        button:hover {
+            cursor: pointer;
+            background-color: lightgrey;
+            
+        }
+        input:focus {
+           outline: 2px solid black;
+        }
+    </style>
+</body>
+</html>
