@@ -21,7 +21,6 @@ input.addEventListener("keypress", function(event) {
 // Prompt the user for two different numbers and display which, if any, is larger
 button.addEventListener("click", () => {
   num = input.value;
-  parseInt(num);
   input.value=''
   input.focus();
   
@@ -33,7 +32,6 @@ button.addEventListener("click", () => {
       numbers.push(num);
       counter ++;
     }
-    console.log(num);
   }
   
   if (counter===2) {
