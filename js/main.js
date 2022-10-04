@@ -25,7 +25,7 @@ button.addEventListener("click", () => {
   input.focus();
   
   if (counter < 2) {
-    if (isNaN(num) || num === "") {
+    if (/\D/ig.test(num)||num==="") {
       alert("Your input is not a number, please enter a number");
     } 
     else {
