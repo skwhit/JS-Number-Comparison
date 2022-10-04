@@ -25,12 +25,12 @@ button.addEventListener("click", () => {
   input.focus();
   
   if (counter < 2) {
-    if (isNaN(num)||num===""||/\s/.test(num)) {
-      alert("Your input is not a number, please enter a number");
-    } 
-    else {
+    if (/^[+-]{0,1}\d+$/.test(num)) {
       numbers.push(num);
       counter ++;
+    } 
+    else {
+      alert("Your input is not a number, please enter a number");
     }
   }
   
