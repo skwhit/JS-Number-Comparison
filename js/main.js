@@ -21,17 +21,19 @@ input.addEventListener("keypress", function(event) {
 // Prompt the user for two different numbers and display which, if any, is larger
 button.addEventListener("click", () => {
   num = input.value;
+  parseInt(num);
   input.value=''
   input.focus();
   
   if (counter < 2) {
-    if (/\D/ig.test(num)||num==="") {
+    if (isNaN(num)||num===""||/\s/.test(num)) {
       alert("Your input is not a number, please enter a number");
     } 
     else {
       numbers.push(num);
       counter ++;
     }
+    console.log(num);
   }
   
   if (counter===2) {
